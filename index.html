@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+ 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+    :root{
+      --cyan: hsl(178, 100%, 50%);
+      --soft-blue: hsl(215, 51%, 70%);
+      --dark-blue: hsl(217, 54%, 11%);
+      --lighter-dark-blue: hsl(216, 50%, 16%);
+      --white: hsl(0, 0%, 100%);
+    }
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--dark-blue);
+      height: 100vh;
+    }
+    main{
+      width: 300px;
+      padding: 15px 0;
+      background-color: var(--lighter-dark-blue);
+      border-radius: 15px;
+    }
+    .container{
+      width: 250px;
+      margin: auto;
+      font-family: 'Outfit', sans-serif;
+    }
+    .equilibrium-image{
+      width: 250px;
+      height: 250px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    h1{
+      color: var(--white);
+      cursor: pointer;
+    }
+    h1:hover{
+      color: var(--cyan);
+    }
+    .product-detail, .time{
+      color: var(--soft-blue);
+      font-size: 18px;
+    }
+    .etherium-price{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid hsl(215, 32%, 27%);
+      padding-bottom: 15px;
+      margin-bottom: 5px;
+    }
+    .etherium-price span{
+      display: flex;
+      align-items: center;
+    }
+    .etherium-price span img{
+      margin-right: 10px;
+    }
+    .amount{
+      color: var(--cyan);
+    }
+    .creator{
+      display: flex;
+      align-items: center;
+    }
+    .creator img{
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      border: 1px solid var(--white);
+      border-radius: 50%;
+    }
+    .creator p{
+      color: var(--soft-blue);
+    }
+    .name{
+      color: var(--white);
+      cursor: pointer;
+    }
+    .name:hover{
+      color: var(--cyan);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section class="container">
+      <div class="myimage">
+        <img src="./images/image-equilibrium.jpg" alt="equilibrium image" class="equilibrium-image">
+      </div>
+      <h1>Equilibrium #3429</h1>
+
+      <p class="product-detail">Our Equilibrium collection promotes balance and calm.</p>
+
+      <div class="etherium-price">
+        <span class="amount">
+          <img src="./images/icon-ethereum.svg" alt=""> 0.041 ETH
+        </span>
+        <span class="time">
+          <img src="./images/icon-clock.svg" alt=""> 3 days left
+        </span>
+      </div>
+  
+      <div class="creator">
+        <img src="./images/image-avatar.png" alt="">
+        <p><span>Creation of&nbsp</span> <span class="name">Jules Wyvern</span></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
