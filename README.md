@@ -32,7 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/nftpreviewcardcomponent-p9SJMIjAsT
+))
 - Live Site URL: [Live site URL]( https://mustapha62996.github.io/nft-preview-card-component-main/)
 
 
